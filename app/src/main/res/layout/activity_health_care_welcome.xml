@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthbmi"
+    tools:context=".HealthCare_Welcome">
+
+    <Button
+        android:id="@+id/details"
+        android:layout_width="156dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_drawable"
+        android:text="Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_wc"
+        android:layout_width="374dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/health1" />
+
+    <Button
+        android:id="@+id/addMeal"
+        android:layout_width="156dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/button_drawable"
+        android:text="Add Meal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_wc"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <Button
+        android:id="@+id/BMI"
+        android:layout_width="160dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/button_drawable"
+        android:text="BMI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toEndOf="@+id/addMeal"
+        app:layout_constraintTop_toBottomOf="@+id/img_wc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthbmi"
+    tools:context=".HealthCare_MealList_Add">
+
+    <EditText
+        android:id="@+id/add_editmorning"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Morning Meal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_morning"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/add_editnoon"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Noon Meal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_editmorning"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/add_editnight"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Night Meal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_editnoon"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/add_editday"
+        android:layout_width="248dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Extra Meal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_editnight"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_add_meal"
+        android:layout_width="304dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/button_drawable"
+        android:text="Add Meal"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="266dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list" />
+
+    <TextView
+        android:id="@+id/add_morning"
+        android:layout_width="213dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text=" Type         Here!!"
+        android:textColor="@color/purple_light"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
